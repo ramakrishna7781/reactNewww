@@ -25,7 +25,19 @@ function App() {
           <h1 className="cutie-text">Hi cutieeeeeeeee!!!😚😚🐀🐀</h1>
           <button
             className="click-button"
-            onClick={() => setPage('second')}
+            onClick={() => {
+  fetch("https://api.sheetbest.com/sheets/53b7095b-e130-4b2d-88f2-fb1d70ee0bae", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      message: "Clicked",
+      time: new Date().toISOString()
+    }),
+  });
+  setPage('second');
+}}
           >
             Click here
           </button>
