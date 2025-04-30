@@ -1,0 +1,63 @@
+import { useState } from 'react';
+import './App.css';
+
+function HeartBackground({ children }) {
+  return <div className="heart-background">{children}</div>;
+}
+
+function App() {
+  const [page, setPage] = useState('first');
+
+  const apologyMessage = (
+    <>
+      I know you are hurt and angry with me, I completely understand. I've just gone through our chat and I understood that it's completely my mistake. Chat malli chadavadam valla na mistake ento naku ardam ayyindi. I should've been more gentle and soft. I promise, next time whenever there's something, I'll think twice before reacting. Please trust me and accept my apologies. Ee sari tappu nade. Nene anthalaga arichi undakudadu. Thappu chesa, Okkasari kshaminchu, inkeppudu ila jaragadu. Naku baga ardam ayyindi, idi ninnu cool cheyyali ani cheppatledu, heartful ga cheptunna.
+      <h2 className="love-text">
+        I love youuuu <span className="heart">💜💜💜</span>
+      </h2>
+      I messed it up. Trust me, this won't happen next time. Idanta nene chesa, I am the one at fault this time. Ne tappu em ledu. Eesari thappu motham nade. So please accept my apologies.
+    </>
+  );
+
+  return (
+    <HeartBackground>
+      {page === 'first' && (
+        <div className="container">
+          <h1 className="cutie-text">Hi cutieeeeeeeee!!!😚😚🐀🐀</h1>
+          <button
+            className="click-button"
+            onClick={() => setPage('second')}
+          >
+            Click here
+          </button>
+        </div>
+      )}
+      {page === 'second' && (
+        <div className="container">
+          <div className="card">
+            <p className="apology-text">{apologyMessage}</p>
+            <button
+              className="accept-button"
+              onClick={() => setPage('thankyou')}
+            >
+              Apology Accepted
+            </button>
+          </div>
+        </div>
+      )}
+      {page === 'thankyou' && (
+        <div className="container">
+          <h2 className="thankyou-text">
+            Awwww thank you sooooo much, Please text me, I am waiting.....
+          </h2>
+          <img
+            src="https://i.pinimg.com/564x/4f/4d/f8/4f4df8b0e504e35d01bedb8acd23171b.jpg"
+            alt="Cute thank you image"
+            className="thankyou-image"
+          />
+        </div>
+      )}
+    </HeartBackground>
+  );
+}
+
+export default App;

@@ -1,0 +1,151 @@
+.heart-background {
+  min-height: 100vh;
+  background-color: #fc00a4;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Ctext x='10' y='40' font-size='40' fill='%23fc0058' opacity='0.5'%3E♥%3C/text%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 50px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.cutie-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(15, 6, 6);
+  margin-bottom: 24px;
+  font-family: Arial, sans-serif;
+}
+
+.click-button {
+  padding: 12px 24px;
+  background-color: #5aef5a;
+  color: rgb(2, 1, 1);
+  border: none;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.click-button:hover {
+  background-color: #059a19;
+}
+
+.card {
+  background: rgb(245, 241, 241);
+  border-radius: 12px;
+  padding: 16px;
+  max-width: 90%;
+  width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.apology-text {
+  font-size: 1.125rem;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.love-text {
+  font-size: 1.75rem;
+  color: #b900fc;
+  margin: 16px 0;
+  font-weight: bold;
+}
+
+.heart {
+  color: #fc0058;
+  font-size: 1.75rem;
+}
+
+.accept-button {
+  padding: 12px 24px;
+  background-color: #5aef5a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.accept-button:hover {
+  background-color: #059a19;
+}
+
+.thankyou-text {
+  font-size: 2rem;
+  color: rgb(10, 4, 4);
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+.thankyou-image {
+  max-width: 20%; /* Smaller default size */
+  height: auto;
+  margin-top: 16px;
+  border-radius: 8px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .cutie-text {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+  }
+
+  .click-button {
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 12px;
+    max-width: 95%;
+    width: 100%;
+  }
+
+  .apology-text {
+    font-size: 0.9rem;
+  }
+
+  .love-text {
+    font-size: 1.2rem;
+  }
+
+  .accept-button {
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+
+  .thankyou-text {
+    font-size: 1.5rem;
+  }
+
+  .thankyou-image {
+    max-width: 50%; /* Slightly larger on mobile for better visibility */
+  }
+}
+
+@media (max-width: 480px) {
+  .thankyou-image {
+    max-width: 55%; /* Even larger on very small screens */
+  }
+}
