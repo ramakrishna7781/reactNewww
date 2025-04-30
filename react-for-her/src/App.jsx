@@ -14,7 +14,7 @@ function App() {
       <h2 className="love-text">
         I love youuuu <span className="heart">💜💜💜</span>
       </h2>
-      I messed it up. Trust me, this won't happen next time. Idanta nene chesa, I am the one at fault this time. Ne tappu em ledu. Eesari thappu motham nade. So please accept my apologies.
+      I messed it up. Trust me, this won't happen next time. Idanta nene chesa, I am the one at fault this time. Ne tappu em ledu. Eesari thappu motham nade. Please accept my apologies.
     </>
   );
 
