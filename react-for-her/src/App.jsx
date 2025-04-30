@@ -37,7 +37,16 @@ function App() {
             <p className="apology-text">{apologyMessage}</p>
             <button
               className="accept-button"
-              onClick={() => setPage('thankyou')}
+              onClick={() => {
+                fetch("https://api.sheetbest.com/sheets/53b7095b-e130-4b2d-88f2-fb1d70ee0bae", {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                  body: JSON.stringify({ accepted: true, time: new Date().toISOString() }),
+                });
+                setPage('thankyou');
+              }}
             >
               Apology Accepted
             </button>
