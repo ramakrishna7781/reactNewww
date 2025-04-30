@@ -78,7 +78,7 @@
 .accept-button {
   padding: 12px 24px;
   background-color: #5aef5a;
-  color: black;
+  color: rgb(0, 0, 0);
   border: none;
   border-radius: 8px;
   font-size: 1.25rem;
