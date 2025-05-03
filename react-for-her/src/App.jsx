@@ -10,11 +10,11 @@ function App() {
 
   const apologyMessage = (
     <>
-      I know you are hurt and angry with me, I completely understand. Chat malli chadavadam valla na mistake ento naku ardam ayyindi. Konni things ki konchem ekkuve irritate ayya, Mari anthala undakunda undalsindi ani ippudu anipistondi and also "asalu nenena ala behave chesindi?" anipinchindi. I should've been more gentle and soft. I promise, next time whenever there's something, I'll think twice before reacting. Please trust me and accept my apologies. Ee sari tappu nade. Nene anthalaga arichi undakudadu. Thappu chesa, Okkasari kshaminchu, inkeppudu ila jaragadu. Naku baga ardam ayyindi, idi ninnu cool cheyyali ani cheppatledu, heartful ga cheptunna.
+      I know you are hurt and angry with me, I completely understand. Chat malli chadavadam valla na mistake ento naku ardam ayyindi. Konni things ki konchem ekkuve irritate ayya, Mari anthala undakunda undalsindi ani ippudu anipistondi and also "asalu nenena ala behave chesindi?" anipinchindi. I should've been more gentle and soft. I promise, next time whenever there's something, I'll respond to the situation, not react. Please trust me and accept my apologies. Let's fix this, trust me we'll be happy ever after. Preminche paddati nachakapote kothaga preminchamanali kani preminchina manishini vadileste ela cheppu.
       <h2 className="love-text">
         I love youuuu <span className="heart">💜💜💜</span>
       </h2>
-      I messed it up. Trust me, this won't happen next time. Idanta nene chesa, I am the one at fault this time. Ne tappu em ledu. Eesari thappu motham nade. Please accept my apologies.
+      I messed it up. Trust me, this won't happen next time. Idanta nene chesa, I am the one at fault this time. Nuv tappa naku evaru unnaru cheppu. Please accept my apologies. FIGHT FIX STAY, but NEVER LEAVE.
     </>
   );
 
